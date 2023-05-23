@@ -32,6 +32,7 @@ public class firstRoute extends RouteBuilder {
         // log
         // Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
         from("timer:first-timer") //null
+                .routeId("Timer-route")
                 .log("${body}")//null
                 .transform().constant("My Constant Message")
                 .log("${body}")//My Constant Message

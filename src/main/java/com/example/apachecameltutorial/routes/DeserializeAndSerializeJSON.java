@@ -19,6 +19,7 @@ public class DeserializeAndSerializeJSON extends RouteBuilder {
 
         from("direct:http")
                 .log(INFO, this.log, "This will be second message!")
+                .routeId("Deserialize And Serialize Route")
                 .to("https://fakerapi.it/api/v1/addresses?_quantity=1")
                 .unmarshal(addressesDataFormat)
                 .log(INFO, this.log,"Deserialized Data: ${body}")

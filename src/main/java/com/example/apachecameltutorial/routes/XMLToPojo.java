@@ -25,6 +25,7 @@ public class XMLToPojo extends RouteBuilder {
 
         from("direct:http-1")
                 .log(INFO, "This will be second Message!")
+                .routeId("XML-To-Pojo 1")
                 .to("http://restapi.adequateshop.com/api/Traveler")
                 .unmarshal(jaxbDataFormat)
                 .log(INFO, this.log,"XML format: ${body}")
