@@ -41,10 +41,20 @@
 			<artifactId>camel-http-starter</artifactId>
 			<version>${camel.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.camel.springboot</groupId>
 			<artifactId>camel-jacksonxml-starter</artifactId>
+			<version>${camel.version}</version>
+			<!-- use the same version as your Camel core version -->
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jetty</artifactId>
 			<version>${camel.version}</version>
 			<!-- use the same version as your Camel core version -->
 		</dependency>
