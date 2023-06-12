@@ -1,4 +1,4 @@
-package com.example.apachecameltutorial.routes;
+package com.example.apachecameltutorial.routes.wiretap;
 
 import com.example.apachecameltutorial.dto.Transaction;
 import org.apache.camel.Exchange;

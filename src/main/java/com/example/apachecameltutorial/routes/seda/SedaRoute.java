@@ -1,4 +1,4 @@
-package com.example.apachecameltutorial.routes;
+package com.example.apachecameltutorial.routes.seda;
 
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.Message;

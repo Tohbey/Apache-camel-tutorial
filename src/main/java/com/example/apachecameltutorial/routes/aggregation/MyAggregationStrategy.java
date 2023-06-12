@@ -1,4 +1,4 @@
-package com.example.apachecameltutorial.routes;
+package com.example.apachecameltutorial.routes.aggregation;
 
 import org.apache.camel.AggregationStrategy;
 import org.apache.camel.Exchange;
